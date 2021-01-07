@@ -1,0 +1,22 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/aa.css' %}">
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <!-- Tabs Titles -->
+        <h2 class="active"> Sign In </h2>
+       
+
+        <!-- Icon -->
+
+        <!-- Login Form -->
+        <form action="login" method="post">
+            {% csrf_token %}
+            <input type="text" id="email" class="fadeIn second" name="email" placeholder="email">
+            <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
+            <input type="submit" class="fadeIn fourth" value="Log In">
+        </form>
+
+
+
+    </div>
+</div>

@@ -1,0 +1,85 @@
+<h1>Government Hospital</h1>
+<h1>Prescription</h1>
+<br /><br /><br />
+<h3 align="center">-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<style>
+    table, th, td, tr {
+        border: 2px solid black;
+        font-size:large;
+        padding:5px;
+        celling:5px;
+        font-style:oblique;
+        
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    table {
+    }
+</style> 
+<h2>Patient ID :&nbsp; &nbsp; {{det.id}}</h2>
+<h2>Full name  :&nbsp; &nbsp; {{det.name}}</h2>
+<center>
+    <table>
+        <tr>
+            <td align="left">
+                Weight
+            </td>
+
+            <td align="left">
+                {{det.weight}}
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                Blood Pressure
+            </td>
+            <td align="left">
+                {{det.bloodpressure}}
+            </td>
+
+        </tr>
+        <tr >
+            <td align="left">
+                Blood Group
+            </td>
+            <td align="left">
+                {{det.bloodgroup}}
+            </td>
+
+        </tr>
+        <tr>
+            <td align="left">
+                Past Diseases
+            </td>
+            <td align="left">
+                {{det.past_disease}}
+            </td>
+        </tr>
+        <tr>
+            <td align="left">
+                Diagnosis
+            </td>
+
+            <td align="left">
+                {{det.diagnosis}}
+            </td>
+        </tr>
+        <tr>
+            <td align="left">Prescription</td>
+            <td align="left">
+                {{det.prescription}}
+            </td>
+        </tr>
+
+
+
+
+
+
+
+        </tr>
+    </table>
+</center>

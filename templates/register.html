@@ -1,0 +1,95 @@
+﻿<!--
+Author: ganesh kavhar
+Author URL: https://ganeshkavhar.github.io
+-->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Quick Register Form </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="keywords" content="Quick Register Form Responsive, Login form web template, Sign up Web Templates, Flat Web Templates, Login signup Responsive web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<link href="{%static 'css/font-awesome.min.css'%}" rel="stylesheet" type="text/css" media="all">
+<link href="{%static 'css/style.css'%}" rel="stylesheet" type="text/css" media="all"/>
+<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+</head>
+<body>
+<div class="signupform">
+<h1> Register </h1>
+	<div class="container">
+		
+		<div class="agile_info">
+			<div class="w3_info">
+				<h2>Register Here</h2>
+				<form action="register" method="post">
+					{% csrf_token %}
+					<div class="left margin">
+						<label>First Name</label>
+						<div class="input-group">
+							<span><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="text" placeholder="First Name" name="firstname" required="">
+						</div>
+					</div>
+					<div class="left">
+						<label>Last Name</label>
+						<div class="input-group">
+							<span><i class="fa fa-user" aria-hidden="true"></i></span>
+							<input type="text" placeholder="Last Name" name="lastname" required="">
+						</div>
+					</div>
+					<div class="left margin">
+						<label>Email Address</label>
+						<div class="input-group">
+							<span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+							<input type="email" placeholder="Email" name="email" required="">
+						</div>
+					</div>
+
+					<div class="left">
+						<label>Password</label>
+						<div class="input-group">
+							<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+							<input type="Password" placeholder="Password" name="password" required="">
+						</div>
+					</div>
+					<div class="left">
+						<label>Confirm Password</label>
+						<div class="input-group">
+							<span><i class="fa fa-lock" aria-hidden="true"></i></span>
+							<input type="Password" placeholder="Confirm Password" name="cpassword" required="">
+						</div>
+					</div>
+					<div class="left">
+
+					</div>
+
+
+
+					<div class="clear"></div>
+
+					<center><button class="btn btn-danger btn-block" type="submit" name="submit">Register Now <i class="fa fa-long-arrow-right" aria-hidden="true"></i></button></center>
+				</form>
+				<div class="clear"><h3>
+					
+					{%for mes in messages %}
+					{{mes}}
+					 {% endfor %}</h3></div>
+			</div>
+			<div class="w3l_form">
+				<div class="left_grid_info">
+					<h3>Already Registered?</h3>
+					<a href="login" class="btn">Login <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+				</div>
+			</div>
+			<div class="clear"></div>
+			</div>
+			
+		</div>
+		<div class="footer">
+
+ 
+ </div>
+	</div>
+	</body>
+</html>
