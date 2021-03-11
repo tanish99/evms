@@ -8,7 +8,7 @@ from django.contrib import messages
 from io import BytesIO
 from django.http import HttpResponse
 from django.template.loader import get_template
-from xhtml2pdf import pisa
+
 from django.views.generic import View
 from accounts.utils import *
 import datetime
