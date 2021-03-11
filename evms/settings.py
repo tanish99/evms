@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'yi0k-^eo-v@v3cmx@pxr(0a__)!0i!y=!m5_q7(^1vkgo^$&**'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['firstsimplepro.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -78,8 +78,8 @@ WSGI_APPLICATION = 'evms.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databasesDATABASES 
 DATABASES= {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.dir.join(os.path.dirname(BASE_DIR), 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME':  os.path.join(BASE_DIR ,'db.sqlite3'),
     }
 }
 
