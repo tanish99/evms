@@ -1,0 +1,1 @@
+web: gunicorn evms.wsgi --log-file -
