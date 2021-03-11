@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'evms.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databasesDATABASES 
 DATABASES= {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'evms',
         'USER':'root',
         'PASSWORD':'root',
