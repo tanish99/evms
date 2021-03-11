@@ -79,10 +79,7 @@ WSGI_APPLICATION = 'evms.wsgi.application'
 DATABASES= {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'evms',
-        'USER':'root',
-        'PASSWORD':'root',
-        'HOST':'localhost'
+        'NAME': os.dir.join(os.path.dirname(BASE_DIR), 'db.sqlite3'),
     }
 }
 
